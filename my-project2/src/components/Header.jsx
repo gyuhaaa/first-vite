@@ -1,15 +1,15 @@
-import ButtonMore from "./ButtonMore";
+import Button from "./Button";
 import Logo from "./Logo";
-import Navbar from "./Navbar";
+import NavBar from "./NavBar";
 
 const Header = () => {
-    return (
-        <header className="bg-blue-100 px-2 py-4 flex justify-between">
-            <Logo />
-            <Navbar />
-            <ButtonMore />
-        </header>
-    );
+  return (
+    <header className="bg-blue-100 px-2 py-4 flex justify-between">
+      <Logo />
+      <NavBar />
+      <Button name="..." isMoreButton={true} />
+    </header>
+  );
 };
 
 export default Header;
