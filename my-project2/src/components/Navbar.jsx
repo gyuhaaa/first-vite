@@ -1,13 +1,11 @@
-import Button1 from "./Button1";
-import Button2 from "./Button2";
-import Button3 from "./Button3";
+import Button from "./Button";
+
+const btnNm = ["메뉴1", "메뉴2", "로그인"];
 
 const Navbar = () => {
     return (
         <nav className="hidden md:flex gap-4">
-          <Button1 />
-          <Button2 />
-          <Button3 />
+          {btnNm.map((v, i) => (<Button key={i} btnNm={v} />))}
         </nav>
     );
 };
